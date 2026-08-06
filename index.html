@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparta Barbearia - Estilo e Tradição</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho com Navegação -->
+    <header>
+      <h1>Sparta Barbearia</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Quem Somos</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <!-- 1. Link para a aba de produtos -->
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="#contato">Agendamento</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sobre">
+        <h2>Quem Somos</h2>
+        <p>
+          A Sparta Barbearia traz o espírito dos guerreiros para o cuidado
+          masculino moderno.
+        </p>
+      </section>
+
+      <!-- 2. Seção com link para consulta de procedimentos -->
+      <section id="procedimentos">
+        <div class="box-link">
+          <!-- O elemento <a> define o hiperlink para o arquivo de destino [3] -->
+          <a href="procedimentos.html"
+            >Consulte aqui o melhor procedimento para você</a
+          >
+        </div>
+      </section>
+
+      <!-- Seção de Serviços utilizando lista não ordenada (<ul>) [4] -->
+      <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+          <li>Cortes de Cabelo</li>
+          <li>Design de Barba</li>
+          <li>Combo Cabelo e Barba</li>
+          <li>Design de Sobrancelha</li>
+          <li>Pigmentação de Barba e Cabelo</li>
+          <li>Coloração de Cabelo</li>
+          <li>Cortes Freestyle</li>
+          <li>Barboterapia</li>
+          <li>Cone Chinês</li>
+          <li>Depilação Nasal e Auricular</li>
+          <li>Tratamentos para Calvície</li>
+        </ul>
+      </section>
+
+      <!-- 3. Seção de Contato atualizada com WhatsApp -->
+      <section id="contato">
+        <h2>Agende seu Horário</h2>
+        <form action="#" method="POST">
+          <label for="nome">Nome do Cliente:</label><br />
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome completo"
+            required
+          /><br /><br />
+
+          <!-- Substituído e-mail por WhatsApp usando input type="tel" -->
+          <label for="whatsapp">WhatsApp:</label><br />
+          <input
+            type="tel"
+            id="whatsapp"
+            name="whatsapp"
+            placeholder="(00) 00000-0000"
+            required
+          /><br /><br />
+
+          <label for="mensagem">Dúvidas ou Preferências:</label><br />
+          <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea
+          ><br /><br />
+
+          <button type="submit">Enviar Agendamento</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Sparta Barbearia - Disciplina de LPW.</p>
+    </footer>
+  </body>
+</html>
