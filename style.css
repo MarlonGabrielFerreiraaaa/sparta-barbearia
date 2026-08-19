@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --sparta-gold: #d4af37;
+  --sparta-dark: #121212;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--sparta-dark);
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.hero-section {
+  height: 70vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1474");
+  background-size: cover;
+  background-position: center;
+}
+
+.box-destaque {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.box-destaque:hover {
+  transform: scale(1.05);
+  background-color: var(--sparta-gold);
+  color: white;
+}
+
+.text-warning {
+  color: var(--sparta-gold) !important;
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+.btn-warning {
+  background-color: var(--sparta-gold);
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #b8860b;
+}
+
+.nav-link:hover {
+  color: var(--sparta-gold) !important;
+}

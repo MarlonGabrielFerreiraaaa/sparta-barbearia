@@ -3,95 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sparta Barbearia - Estilo e Tradição</title>
+    <title>Sparta Barbearia | Força e Estilo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Cabeçalho com Navegação -->
-    <header>
-      <h1>Sparta Barbearia</h1>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Quem Somos</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <!-- 1. Link para a aba de produtos -->
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="#contato">Agendamento</a></li>
-        </ul>
-      </nav>
+    <header
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-warning"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="index.html"
+          >SPARTA</a
+        >
+        <nav>
+          <ul class="navbar-nav ms-auto flex-row gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="procedimentos.html"
+                >Procedimentos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-warning btn-sm" href="#contato"
+                >Agendar</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section id="sobre">
-        <h2>Quem Somos</h2>
-        <p>
-          A Sparta Barbearia traz o espírito dos guerreiros para o cuidado
-          masculino moderno.
-        </p>
-      </section>
-
-      <!-- 2. Seção com link para consulta de procedimentos -->
-      <section id="procedimentos">
-        <div class="box-link">
-          <!-- O elemento <a> define o hiperlink para o arquivo de destino [3] -->
-          <a href="procedimentos.html"
-            >Consulte aqui o melhor procedimento para você</a
-          >
+      <section
+        class="hero-section d-flex align-items-center justify-content-center text-center text-white"
+      >
+        <div class="container">
+          <h1 class="display-1 fw-bold">SPARTA BARBEARIA</h1>
+          <p class="lead">
+            A tradição da navalha encontra a precisão espartana.
+          </p>
         </div>
       </section>
 
-      <!-- Seção de Serviços utilizando lista não ordenada (<ul>) [4] -->
-      <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <ul>
-          <li>Cortes de Cabelo</li>
-          <li>Design de Barba</li>
-          <li>Combo Cabelo e Barba</li>
-          <li>Design de Sobrancelha</li>
-          <li>Pigmentação de Barba e Cabelo</li>
-          <li>Coloração de Cabelo</li>
-          <li>Cortes Freestyle</li>
-          <li>Barboterapia</li>
-          <li>Cone Chinês</li>
-          <li>Depilação Nasal e Auricular</li>
-          <li>Tratamentos para Calvície</li>
-        </ul>
+      <section id="sobre" class="container py-5 text-center">
+        <h2 class="fw-bold mb-4">O Refúgio do Guerreiro Moderno</h2>
+        <p class="mx-auto" style="max-width: 700px">
+          Unimos técnicas clássicas de barbearia com um ambiente de elite para
+          homens que buscam disciplina e estilo em cada detalhe.
+        </p>
       </section>
 
-      <!-- 3. Seção de Contato atualizada com WhatsApp -->
-      <section id="contato">
-        <h2>Agende seu Horário</h2>
-        <form action="#" method="POST">
-          <label for="nome">Nome do Cliente:</label><br />
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            placeholder="Digite seu nome completo"
-            required
-          /><br /><br />
+      <section class="bg-light py-5">
+        <div class="container d-flex justify-content-center">
+          <article
+            class="box-destaque text-center p-5 border border-warning shadow-lg"
+          >
+            <h3>Descubra sua Identidade</h3>
+            <p>
+              Análise de visagismo profissional incluída em todos os cortes.
+            </p>
+            <a href="procedimentos.html" class="btn btn-warning fw-bold"
+              >CONSULTE O MELHOR PROCEDIMENTO</a
+            >
+          </article>
+        </div>
+      </section>
 
-          <!-- Substituído e-mail por WhatsApp usando input type="tel" -->
-          <label for="whatsapp">WhatsApp:</label><br />
-          <input
-            type="tel"
-            id="whatsapp"
-            name="whatsapp"
-            placeholder="(00) 00000-0000"
-            required
-          /><br /><br />
-
-          <label for="mensagem">Dúvidas ou Preferências:</label><br />
-          <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea
-          ><br /><br />
-
-          <button type="submit">Enviar Agendamento</button>
-        </form>
+      <section id="contato" class="py-5 bg-dark text-white">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2 class="text-warning fw-bold">Convoque o Barbeiro</h2>
+              <p>Agende seu horário via WhatsApp.</p>
+              <form action="#" method="POST" class="row g-3 mt-3">
+                <div class="col-12">
+                  <input
+                    type="text"
+                    name="nome"
+                    class="form-control"
+                    placeholder="Nome do Guerreiro"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="tel"
+                    name="whatsapp"
+                    class="form-control"
+                    placeholder="WhatsApp (00) 00000-0000"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-warning w-100 fw-bold py-3"
+                  >
+                    SOLICITAR AGENDAMENTO
+                  </button>
+                </div>
+              </form>
+            </div>
+            <aside
+              class="col-md-5 offset-md-1 mt-5 mt-md-0 border-start border-warning ps-4"
+            >
+              <h4 class="text-warning">Horário de Batalha</h4>
+              <table class="table table-dark table-borderless mt-3">
+                <thead>
+                  <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Segunda - Sexta</td>
+                    <td>09h às 20h</td>
+                  </tr>
+                  <tr>
+                    <td>Sábado</td>
+                    <td>08h às 18h</td>
+                  </tr>
+                </tbody>
+              </table>
+            </aside>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 Sparta Barbearia - Disciplina de LPW.</p>
+    <footer class="bg-black py-4 text-center border-top border-secondary">
+      <p class="text-muted small m-0">
+        &copy; 2026 Sparta Barbearia - Desenvolvido para LPW.
+      </p>
     </footer>
   </body>
 </html>
