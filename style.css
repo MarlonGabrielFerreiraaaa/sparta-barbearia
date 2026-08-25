@@ -2,69 +2,172 @@
 
 :root {
   --sparta-gold: #d4af37;
-  --sparta-dark: #121212;
+  --sparta-black: #000000;
+  --sparta-card: #111111;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--sparta-dark);
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--sparta-black);
+  color: white;
+  padding-top: 80px;
 }
 
 header {
-  display: flex;
-  align-items: center;
+  background: var(--sparta-black);
+  border-bottom: 2px solid var(--sparta-gold);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 0;
 }
 
-.hero-section {
-  height: 70vh;
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  display: flex;
+}
+.logo h1 {
+  font-size: 28px;
+  margin: 0;
+}
+.logo span {
+  color: var(--sparta-gold);
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: var(--sparta-gold);
+}
+
+.hero {
+  min-height: 70vh;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1474");
   background-size: cover;
   background-position: center;
 }
 
-.box-destaque {
-  width: 300px;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: black;
+.titulo-secao {
+  text-align: center;
+  color: var(--sparta-gold);
+  font-size: 2.5rem;
+  margin: 50px 0;
+  font-weight: bold;
+}
+
+.card-produto,
+.card-sparta,
+.form-container {
+  background: var(--sparta-card);
+  border: 1px solid #333;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.card-produto:hover {
+  border-color: var(--sparta-gold);
+  transform: translateY(-10px);
+}
+
+.img-fixa-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.img-fixa-container img,
+.img-insta {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: 0.3s;
 }
 
-.box-destaque:hover {
+.img-insta {
+  border-radius: 10px;
+  height: 250px;
+}
+.img-insta:hover {
+  filter: brightness(1.2);
   transform: scale(1.05);
-  background-color: var(--sparta-gold);
-  color: white;
 }
 
-.text-warning {
-  color: var(--sparta-gold) !important;
+.mapa-container {
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.card img {
-  height: 300px;
-  object-fit: cover;
-}
-
-.max-width-600 {
-  max-width: 600px;
-}
-
-.btn-warning {
-  background-color: var(--sparta-gold);
+.btn-sparta,
+.btn {
+  background: var(--sparta-gold);
+  color: black;
+  font-weight: bold;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 0.3s;
   border: none;
 }
 
-.btn-warning:hover {
-  background-color: #b8860b;
+.btn-sparta:hover {
+  transform: scale(1.05);
+  background: #b8860b;
+  color: white;
 }
 
-.nav-link:hover {
+.text-gold {
   color: var(--sparta-gold) !important;
+}
+.border-gold {
+  border: 2px solid var(--sparta-gold) !important;
+}
+
+@media (min-width: 2000px) {
+  .container {
+    max-width: 1800px;
+  }
+  .display-1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 2.5rem;
+  }
+  nav ul {
+    display: none;
+  }
 }

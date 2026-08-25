@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sparta Barbearia | Força e Estilo</title>
+    <title>Sparta Barbearia | O Legado em Guarapuava</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,31 +11,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header
-      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-warning"
-    >
-      <div class="container">
-        <a class="navbar-brand fw-bold text-warning" href="index.html"
-          >SPARTA</a
-        >
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <h1>SPARTA<span>.</span></h1>
+        </div>
         <nav>
-          <ul class="navbar-nav ms-auto flex-row gap-3">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="procedimentos.html"
-                >Procedimentos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="produtos.html">Produtos</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-outline-warning btn-sm" href="#contato"
-                >Agendar</a
-              >
-            </li>
+          <ul class="nav">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="procedimentos.html">Rituais</a></li>
+            <li><a href="produtos.html">Arsenal</a></li>
           </ul>
         </nav>
       </div>
@@ -43,106 +28,160 @@
 
     <main>
       <section
-        class="hero-section d-flex align-items-center justify-content-center text-center text-white"
+        class="hero d-flex align-items-center justify-content-center text-center"
       >
         <div class="container">
-          <h1 class="display-1 fw-bold">SPARTA BARBEARIA</h1>
-          <p class="lead">
-            A tradição da navalha encontra a precisão espartana.
+          <h2 class="display-1 fw-bold text-white">FORÇA, HONRA E NAVALHA</h2>
+          <p class="lead text-white px-md-5">
+            Elevando a estética masculina ao padrão de elite espartano em
+            Guarapuava.
           </p>
+          <a href="#agendamento" class="btn-sparta">CONVOCAR BARBEIRO</a>
         </div>
       </section>
 
-      <section id="sobre" class="container py-5 text-center">
-        <h2 class="fw-bold mb-4">O Refúgio do Guerreiro Moderno</h2>
-        <p class="mx-auto" style="max-width: 700px">
-          Unimos técnicas clássicas de barbearia com um ambiente de elite para
-          homens que buscam disciplina e estilo em cada detalhe.
-        </p>
+      <section id="historia" class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="text-gold fw-bold mb-4">O Legado de Elite</h2>
+            <p>
+              Fundada por Marlon e Erick, a Sparta Barbearia nasceu para
+              resgatar o rigor e a disciplina espartana na estética masculina.
+            </p>
+            <p>
+              Unimos a técnica clássica de herança ao visagismo moderno, criando
+              um refúgio para o guerreiro contemporâneo.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://classic.exame.com/wp-content/uploads/2020/05/whatsapp-image-2020-05-12-at-10.47.30.jpg?ims=1200x900"
+              alt="Interior da Barbearia Sparta"
+              class="img-fluid rounded border-gold shadow"
+            />
+          </div>
+        </div>
       </section>
 
-      <section class="bg-light py-5">
-        <div class="container d-flex justify-content-center">
-          <article
-            class="box-destaque text-center p-5 border border-warning shadow-lg"
-          >
-            <h3>Descubra sua Identidade</h3>
-            <p>
-              Análise de visagismo profissional incluída em todos os cortes.
-            </p>
-            <a href="procedimentos.html" class="btn btn-warning fw-bold"
-              >CONSULTE O MELHOR PROCEDIMENTO</a
+      <section id="localizacao" class="bg-black py-5">
+        <div class="container">
+          <h2 class="titulo-secao">Nossa Base Operacional</h2>
+          <div class="row g-4 mt-2">
+            <div
+              class="col-md-4 text-white d-flex flex-column justify-content-center"
             >
+              <h3 class="text-gold">Centro de Guarapuava</h3>
+              <p class="fs-5">
+                Avenida XV de Novembro, nº 9876<br />Centro - Guarapuava, PR
+              </p>
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                class="btn btn-outline-warning mt-3"
+                >VER NO GPS</a
+              >
+            </div>
+            <div class="col-md-8">
+              <div class="mapa-container border-gold">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.288258525048!2d-51.464627!3d-25.393456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDIzJzM2LjQiUyA1McKwMjcnNTIuNyJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                  width="100%"
+                  height="350"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="social" class="container py-5">
+        <h2 class="titulo-secao">Siga o Arsenal @SpartaGpuava</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-3 mt-4">
+          <article class="col">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsj6r0ptuJjSei8qVApJD4MMRiNQ6mlkhL1Sw8QPCK9bLad1OuNOq9AYo&s=10"
+              class="img-insta"
+              alt="Post 1"
+            />
+          </article>
+          <article class="col">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjL8Gde5utE75VvfRVJLiaJ3ssIN-4OLMeT0FDV5qaNQPHvfqfxZ1xKoS&s=10"
+              class="img-insta"
+              alt="Post 2"
+            />
+          </article>
+          <article class="col">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFoMMi8mliwp8BnD0n5uhpQDymHgmWn6NvihMgKlTf5WW_36wkXUjBPuc&s=10"
+              class="img-insta"
+              alt="Post 3"
+            />
+          </article>
+          <article class="col">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuOLb9z37ml0d2gcL9HQl8Y1KAHzcWEO6SAJGXeqwUQ&s"
+              class="img-insta"
+              alt="Post 4"
+            />
           </article>
         </div>
       </section>
 
-      <section id="contato" class="py-5 bg-dark text-white">
+      <section id="agendamento" class="py-5 bg-black">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <h2 class="text-warning fw-bold">Convoque o Barbeiro</h2>
-              <p>Agende seu horário via WhatsApp.</p>
-              <form action="#" method="POST" class="row g-3 mt-3">
-                <div class="col-12">
-                  <input
-                    type="text"
-                    name="nome"
-                    class="form-control"
-                    placeholder="Nome do Guerreiro"
-                    required
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    type="tel"
-                    name="whatsapp"
-                    class="form-control"
-                    placeholder="WhatsApp (00) 00000-0000"
-                    required
-                  />
-                </div>
-                <div class="col-12">
-                  <button
-                    type="submit"
-                    class="btn btn-warning w-100 fw-bold py-3"
-                  >
-                    SOLICITAR AGENDAMENTO
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="form-container p-5 border-gold shadow-lg">
+                <h2 class="text-gold text-center mb-4">Agendar Batalha</h2>
+                <form action="#" method="POST">
+                  <div class="mb-3">
+                    <label class="form-label text-white"
+                      >Nome do Guerreiro:</label
+                    >
+                    <input
+                      type="text"
+                      name="nome"
+                      class="form-control bg-dark text-white border-secondary"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label text-white">WhatsApp:</label>
+                    <input
+                      type="tel"
+                      name="whatsapp"
+                      class="form-control bg-dark text-white border-secondary"
+                      placeholder="(42) 99999-9999"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label text-white">Mensagem:</label>
+                    <textarea
+                      name="mensagem"
+                      class="form-control bg-dark text-white border-secondary"
+                      rows="3"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn-sparta w-100 border-0">
+                    CONFIRMAR AGENDAMENTO
                   </button>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
-            <aside
-              class="col-md-5 offset-md-1 mt-5 mt-md-0 border-start border-warning ps-4"
-            >
-              <h4 class="text-warning">Horário de Batalha</h4>
-              <table class="table table-dark table-borderless mt-3">
-                <thead>
-                  <tr>
-                    <th>Dia</th>
-                    <th>Horário</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Segunda - Sexta</td>
-                    <td>09h às 20h</td>
-                  </tr>
-                  <tr>
-                    <td>Sábado</td>
-                    <td>08h às 18h</td>
-                  </tr>
-                </tbody>
-              </table>
-            </aside>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="bg-black py-4 text-center border-top border-secondary">
-      <p class="text-muted small m-0">
-        &copy; 2026 Sparta Barbearia - Desenvolvido para LPW.
+    <footer class="text-center py-4 border-top border-secondary">
+      <p class="m-0 text-secondary">
+        Sparta Barbearia &copy; 2026 | Marlon Gabriel e Erick Rafael
       </p>
     </footer>
   </body>
